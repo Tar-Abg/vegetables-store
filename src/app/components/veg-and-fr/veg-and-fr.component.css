@@ -1,0 +1,11 @@
+.btn{
+    height:   2rem;
+    width: 35px;
+    margin: 0 5px 0 5px;
+ }
+ .text-danger{
+    font-size: 1.5rem
+}    
+ .card-img-top{
+   height:300px ;
+ }

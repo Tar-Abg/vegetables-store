@@ -1,0 +1,22 @@
+.form{
+    background-color: #BFEFFF;
+    padding: 20px;
+    height: 50vh;
+}
+.info{
+    background-color: #BFEFFF;
+    height: 100vh;
+    position: relative;
+    padding: 30px;
+    
+}
+.info div{
+    margin-bottom: 40px;
+}
+.main{
+    padding:  50px;
+    justify-content: space-between;
+    background-color: #4FCDFF  ;
+    padding-top: 150px;
+    margin-bottom: 240px;
+}

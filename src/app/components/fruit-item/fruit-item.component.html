@@ -1,0 +1,20 @@
+<div class="container row d-flex ">
+  <div class="container pt-5 col-md-4">
+    <div class="card " style="width: 32rem; height: 40rem;" >
+      <img class="card-img-top" [src]="itemObject.img" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{itemObject.name}}</h5> 
+          <div class="text-center"> 
+            <p class="text-danger">{{itemObject.price}}Դր</p>
+          <a class="btn btn-success"  routerLink="/main" style="width:150px; height: 35px;" >Go to back</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="col-md-4 mt-5 a">
+    <h1>{{itemObject.name}}</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore nesciunt libero in unde mollitia asperiores sint tempore accusamus, suscipit perferendis numquam ut obcaecati esse odit eaque et consectetur magni ad voluptatum. Expedita perferendis atque, minus repellendus placeat, ab ea odio sit provident incidunt vel distinctio ipsam consequatur voluptatibus quo?</p>
+  </div>
+</div>
+
+    

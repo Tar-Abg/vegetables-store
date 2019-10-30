@@ -1,0 +1,31 @@
+<div class="main">
+<button class="btn btn-success basket " (click)="basketTogle()">Basket: {{zambyuxArray.length}}</button>
+<div class="basketList" *ngIf = "basket">
+        <div >
+                <ul class="modala">
+                        <i (click)="basketTogle()" class="fas fa-times"></i>
+
+                        <li *ngFor = "let item of zambyuxArray" class="list-group-item "> {{item.name}} <span class="ml-3"> {{item.price + "Դր"}} </span> <i class="fas fa-trash-alt" (click)='clearBasket(item)'></i> </li>
+                         <p class="allPrice"> Ընդհանուր {{ allPrice }}Դր </p>
+                </ul>
+        </div>
+</div>
+<div [ngStyle]="{'opacity': chengeOp}">
+
+
+<h1 class="text-center text-danger">FRUITS</h1>
+<div class="container d-flex flex-wrap">
+        <div *ngFor="let index of frutAndVeg" class="col-md-4 col-sm-6 col-10 w-25"  >
+                <app-veg-and-fr class="col-md-6" (addBasket)="zambyux($event)"  *ngIf = "index.type == 'fr'"   [outFrutAndVeg] = 'index'  ></app-veg-and-fr>
+        </div>  
+           
+</div>
+
+<h1 class="text-center text-danger">Vegtbls</h1>
+<div class="container d-flex flex-wrap"  >
+        <div *ngFor="let index of frutAndVeg" class="col-md-4 col-sm-6 col-10" > 
+                <app-veg-and-fr  (addBasket)="zambyux($event)" class="col-md-4 ml-5" [outFrutAndVeg] = 'index' *ngIf = "index.type == 'vg'" ></app-veg-and-fr>
+        </div>        
+</div>
+</div>
+</div>
